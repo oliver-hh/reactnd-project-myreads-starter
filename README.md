@@ -4,7 +4,7 @@ This is the starter template for the final assessment project for Udacity's Reac
 
 Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
 
-## TL;DR
+## Setup
 
 To get started developing right away:
 
@@ -90,3 +90,65 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Planning Stage
+
+### Step 1 - Draw All of the Views of the App
+We need to determine the look and functionality of each view in your app. One of the best approaches is to draw each view of the app on paper so that you'll have a good idea of what information and data you're planning to have on each page.
+
+- ShelvesView
+- SearchView
+
+### Step 2 - Break Each View Into a Hierarchy of Components
+
+For this step,
+- draw boxes around every component; and
+- arrange our components into a hierarchy
+
+#### Shelves View
+
+Components (top down)
+- ShelvesView
+- ShelfList
+- Shelf
+- BookList
+- Book
+- MoveBook
+
+#### Search View
+
+Conponents (top down)
+- SearchView
+- SearchBooks
+- BookList
+- Book
+- MoveBook
+
+#### Conclusion
+After breaking each views into a hierarchy of components it became apparent that the following components may be shared between the views and don't need to implemented twice:
+- BookList
+- Book
+- MoveBook
+
+### Step 3 - Determine the Data Each Component Needs
+For each component, determine which data is the component accessing, getting, modifying, or showing.
+
+### Step 4 - Determine Which Component Each Piece of Data Should Live in
+If multiple components need the same data, lift the state up by storing the data in the components' closest common ancestor
+
+## Coding Stage
+
+### Step 1 - Create components that hold data.
+Build all of the components that hold data and make sure everything works correctly, including API calls (e.g. the components request data the correct way and the data comes in as expected.)
+
+### Step 2 - Create components that need data.
+
+### Step 3 - Pass data from components that have it to components that need it.
+
+### Step 4 - Debug and make sure that everything works as expected
+
+### Step 5 - Add inverse data flow
+
+### Step 6 - Add navigation.
+
+### Step 7 - Add finishing touches and make sure the project meets the rubric.
